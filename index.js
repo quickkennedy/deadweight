@@ -5,21 +5,13 @@ function getRandomInt(max) {
 const Discord = require('discord.js');
 const fs = require('fs');
 const path = require('path');
-//const imageSearch = require('image-search-google');
 const bot = new Discord.Client();
 const talkedRecently = new Set();
 const talkedRecently2 = new Set();
-//const sharp = require('sharp');
 const ytdl = require('ytdl-core')
 
-//let e621 = require('e621-api').default;
-//let enums = require('e621-api/build/enums');
-//let wrapper = new e621("JackBot by JackBoi on e621", "jackboi", "gtMjTYsLWJnjPqzTfq7hbPoa");
-
-//TOKEN
-const token = 'NzY5MjU4NDkzMjYxMzgxNjc0.X5MZzA.CbmUIVGC7Ftnvqr2QUn5UUxcP2E';
+const token = 'TOKEN HERE';
 const ADMINID = '500456250190856202'
-//TOKEN
 
 const PREFIX = '!deadweight ';
 const PREFIX2 = '!d ';
@@ -27,13 +19,6 @@ const PREFIX2 = '!d ';
 bot.on('ready', () =>{
 	console.log('deadweight is ready');
 })
-  
-bot.on('ready', () => {
-	//bot.user.setActivity("live from " + places[getRandomInt(places.length)], {
-	//	type: "STREAMING",
-	//	url: "https://www.twitch.tv/angrycupocider"
-	//});
-});
 
 const directoryPath = path.join(__dirname, 'botfiles');
 
